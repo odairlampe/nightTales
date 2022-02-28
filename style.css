@@ -1,0 +1,338 @@
+@font-face{
+    font-family: "WaitingfortheSunrise";
+    src: url("./assets/fonts/WaitingfortheSunrise.ttf") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Indie+Flower&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.pushable > .pusher{
+    background-image: url(./assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.box{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    margin: 50px 0 0 0;
+}
+
+.input-login, .sideCadastro{
+    width: 13vw;
+    font-size: 1.5vw;
+    padding: 5px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    border-color: black;
+    background-color: #434343;
+    box-shadow: 0px 3px 5px black;
+}
+
+.sideCadastro{
+    width: 100%;
+}
+
+.avisos{
+    font-size: 1.3vw;
+    z-index: 1;
+    color: white;
+    font-family: "WaitingfortheSunrise";
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+
+.avisos2{
+    font-size: 1.3vw;
+    z-index: 1;
+    color: white;
+    font-family: "WaitingfortheSunrise";
+    position: absolute;
+    right: 10%;
+    top: 35%;
+}
+
+.earsImg{
+    width: 4vw;
+    align-self: center;
+}
+
+.comoJogar{
+    margin: auto;
+    color: white;
+}
+
+.sideButton{
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 5px;
+    margin: 20px 0 0 0;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 10px;
+    color: white;
+    border-color: black;
+    background-color: #434343;
+    box-shadow: 0px 3px 5px black;
+    cursor: pointer;
+}
+
+.sideButton:active{
+    box-shadow: none;
+    border-color: black;
+}
+
+.input-button{
+    width: 10vw;
+    font-size: 1.5vw;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border-color: black;
+    background-color: #434343;
+    box-shadow: 0px 3px 5px black;
+    cursor: pointer;
+}
+
+.input-button:active{
+    box-shadow: none;
+    border-color: black;
+}
+
+.cadastroP{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+}
+#avisocadastro{
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 70%;
+    margin: 5% auto 0 auto;
+    text-align: center;
+    display: block;
+}
+
+
+.characters-background{
+    position: relative;
+    width: 90%;
+    padding: 40px 50px 0 50px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.logo{
+    display: inline-block;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 20px;
+    z-index: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.box-buttons{
+    position: relative;
+    bottom: 20vw;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.box-buttons button{
+    align-self: center;
+    margin-bottom: 3vw;
+    display: inline-block;
+    border: 0;
+    font-size: 2.5vw;
+    background: none;
+    font-family: "WaitingfortheSunrise";
+    color: #ffffff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menu-button{
+    border: 0;
+    font-size: 2vw;
+    background: none;
+    font-family: "WaitingfortheSunrise";
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.box-buttons button:hover{
+    transform: scale(1.1);
+}
+.box-buttons button:active{
+    transform: scale(0.9);
+}
+
+#modalBody{
+    width: 35vw;
+    font-family: "WaitingfortheSunrise";
+    border: 3px solid white;
+}
+#modalBody2{
+    width: 23vw;
+    font-family: "WaitingfortheSunrise";
+    border: 3px solid white;
+}
+.money-body, .instructions-body{
+    font-size: 0.7vw;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+}
+.moneyP{
+    color: white;
+}
+.buy-body, .instructions-images{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+}
+
+.instructions-images img{
+    text-align: center;
+    width: 90%;
+    border: 3px solid rgb(255, 255, 255);
+    margin: 10px auto 10px auto;
+}
+.instructions-images p{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 1.5vw;
+    width: 85%;
+    margin: 0 auto 20px auto;
+}
+
+.atadura{
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 40%;
+    border: 2px solid rgba(255, 255, 255, 0.534);
+}
+
+.imgComprar{
+    width: 7vw;
+}
+
+.pComprar{
+    color: white;
+    font-size: 2vw;
+}
+
+.buyButton{
+    font-size: 1.2vw;
+    border: 1px solid rgba(139, 139, 139, 0.472);
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgba(175, 96, 50, 0.993);
+}
+.buyButton:hover{
+    background-color: rgba(194, 115, 69, 0.993);
+}
+.buyButton:active{
+    font-weight: bold;
+}
+
+.description-loja{
+    background: rgb(75,75,75);
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+.description-loja h3{
+    font-size: 2vw;
+    font-family: "WaitingfortheSunrise";
+    padding: 5% 1% 0 5%;
+}
+
+
+.description{
+    background: rgb(75,75,75);
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+
+.description h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0 0 0;
+    color: #ffffff;
+    font-size: 1.9vw;
+    font-family: "WaitingfortheSunrise";
+}
+
+.selectCharacter{
+    width: 16vw;
+    transition: .5s;
+    position: relative;
+    right: 4vw;
+    bottom: 2vw;
+}
+.selectWeapon{
+    width: 9vw;
+}
+
+.selectCharacter:hover, .selectWeapon:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.characters{
+    text-align: center;
+}
+
+.cInfo{
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    display: inline-block;
+    color: white;
+}
+.cInfoW{
+    font-size: 1.8vw;
+    text-transform: capitalize;
+    display: inline-block;
+    color: white;
+}

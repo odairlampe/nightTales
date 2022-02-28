@@ -1,0 +1,169 @@
+.items{
+    width: 100%;
+    position: relative;
+    top: 15vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-button, .img-button-enemy{
+    display: inline-block;
+    width: 8vw;
+    align-self: center;
+    transition: .2s;
+    margin: 0 10px 10px 0;
+}
+
+.img-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img-button:active{
+    cursor: pointer;
+    transform: scale(0.9)
+}
+
+.items p{
+    font-size: 5vw;
+    font-family: "WaitingfortheSunrise";
+    color: white;
+}
+
+.items-heal{
+    display: flex;
+    flex-direction: row;
+}
+
+.fight-box{
+    margin: 15vh auto 0 auto;
+    width: 90vw;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0px 0px 100px black;
+}
+
+.fight-box img{
+    width: 30vw;
+}
+
+.health-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 3vw;
+    font-family: "WaitingfortheSunrise";
+    color: white;
+}
+
+.health-bar p{
+    margin: 20px 0 0 0;
+}
+
+.bar{
+    background-color: rgb(216, 216, 216);
+    width: 15vw;
+    height: 5vh;
+    border: 1px solid rgba(129, 129, 129, 0.383);
+}
+
+#bar-in{
+    height: 100%;
+    background-color: green;
+    transition: 1s;
+}
+#bar-in2{
+    height: 100%;
+    background-color: green;
+    transition: 1s;
+}
+
+.winBox{
+    margin: 15vh auto 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    box-shadow: 0px 0px 100px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loseBox{
+    margin: 15vh auto 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    box-shadow: 0px 0px 100px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.winBox img{
+    width: 40vw;
+}
+.loseBox img{
+    width: 40vw;
+}
+
+.winnerInfo, .aviso-vencedor{
+    margin: 10px 0 0 0;
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.levelButton{
+    width: 50%;
+    font-size: 1.5vw;
+    padding: 5px;
+    margin: 30% 0 0 0;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: #5a5a5a;
+    box-shadow: 0px 3px 5px black;
+    cursor: pointer;
+}
+.loserButton{
+    width: 50%;
+    font-size: 1.5vw;
+    padding: 5px;
+    margin: 30% 0 0 0;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: #5a5a5a;
+    box-shadow: 0px 3px 5px black;
+    cursor: pointer;
+}
+
+.specialBar{
+    height: 1.5vw;
+    width: 8vw;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,170,32,1) 69%, rgba(0,158,37,1) 100%);
+    transform: rotate(90deg);
+    border: 1px solid black;
+    position: relative;
+    left: 3vw;
+    top: 30%;
+}
+.specialBar-in{
+    height: 100%;
+    background-color: white;
+    transition: 1.5s;
+}
+
+
+
+.hide{
+    display: none;
+}
