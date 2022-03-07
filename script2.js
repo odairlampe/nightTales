@@ -67,9 +67,9 @@ function actions(e) {
 }
 
 // BOTAO DE MENU PRINCIPAL INGAME
-function mainmenu(){
-    if(window.confirm("O PROGRESSO SERÁ PERDIDO! DESEJA CONTINUAR?")){
-        window.location.href = "./index.php"
+function mainmenu(msg){
+    if(window.confirm(msg)){
+        window.location.href = "./home.php"
     }
 }
         

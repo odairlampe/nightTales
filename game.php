@@ -24,7 +24,6 @@ include 'session.php';
 <!-- tela de jogo -->
 <div class="container">
     <div class="containerIn">
-        <button class="menu-button" onclick="mainmenu()">Menu Principal</button>
         <div class="items">
             <div class="items-heal">
 
@@ -70,6 +69,7 @@ include 'session.php';
                     </div>
                 </div>
             </div>
+            <button class="menu-button" onclick="mainmenu('O PROGRESSO SERÁ PERDIDO! DESEJA CONTINUAR?')">Encerrar batalha</button>
             <div>
                 <p id="health2"></p>
 
@@ -94,6 +94,7 @@ include 'session.php';
             <h5 id="ataquesRealizados">Ataques Realizados: error</h5>
             <h5 id="ataquesRecebidos">Ataques Recebidos: error</h5>
             <button id="levelButton" class="levelButton">Proximo inimigo</button>
+            <button id="menuButton" class="levelButton" onclick="mainmenu('O PROGRESSO SERÁ PERDIDO! DESEJA CONTINUAR?')">Menu</button>
         </div>
     </div>
 </div>
@@ -138,6 +139,17 @@ include 'session.php';
         });
     };
 reset1();
+</script>
+<script>
+  $(document).ready(function(){
+    $("#lojaButton").on('click', function(){
+      $('.long.modal.loja')
+      .modal({
+        centered: false
+    })
+    .modal('show')
+    })
+  })
 </script>
 
 <script src="./script.js"></script>

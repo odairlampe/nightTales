@@ -102,6 +102,11 @@ var endgame = ()=>{
                     localStorage.char2 = char2ready;
                 }
                 localStorage.weapon2 = localStorage.char2;
+
+
+                if(localStorage.char2 > 8){
+                    window.location.href = "./endgame.php";
+                }
                 
                 window.location.href = "./game.php";
             });
@@ -135,7 +140,7 @@ var endgame = ()=>{
                     },
                 });
 
-                window.location.href = "./index.php"
+                window.location.href = "./home.php"
 
             });
         }

@@ -16,6 +16,7 @@ body{
     background-image: url(./assets/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 body.pushable > .pusher{
@@ -196,6 +197,10 @@ input:-webkit-autofill:active {
     font-family: "WaitingfortheSunrise";
     color: #ffffff;
     cursor: pointer;
+    transition: .1s;
+}
+.menu-button:hover{
+    transform: scale(1.1);
 }
 
 .box-buttons button:hover{
@@ -335,4 +340,27 @@ input:-webkit-autofill:active {
     text-transform: capitalize;
     display: inline-block;
     color: white;
+}
+
+.h1End{
+    color: white;
+    font-size: 4vw;
+    font-family: 'WaitingfortheSunrise';
+    text-shadow: 5px 5px 5px black;
+}
+.menuEnd{
+    font-size: 3vw;
+    padding: 5px;
+    margin: 20px 0 0 0;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 10px;
+    color: white;
+    border-color: black;
+    background-color: #434343;
+    box-shadow: 0px 3px 5px black;
+    cursor: pointer;
+    transition: .1s;
+}
+.menuEnd:active{
+    transform: scale(0.95);
 }

@@ -24,11 +24,10 @@ $resultado_query_user = mysqli_query($conexao, $query_user);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
-
     <link rel="stylesheet" href="./fakeLoader.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
     <link rel="stylesheet" href="./style.css">
 
     <title>NightTales</title>
