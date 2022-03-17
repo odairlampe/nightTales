@@ -115,7 +115,7 @@ var money = function(){
             $('#money').html(data);
             setTimeout(() => {
                 money();
-            }, 1000);
+            }, 300);
         },
     });
 }
